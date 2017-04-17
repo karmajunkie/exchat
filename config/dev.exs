@@ -43,8 +43,6 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :exchat, Exchat.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
   database: "exchat_dev",
   pool_size: 10
 
