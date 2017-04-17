@@ -30,6 +30,11 @@ var config = {
   },
 
   resolve: {
+      alias: {
+        phoenix_html: __dirname + "/deps/phoenix_html/web/static/js/phoenix_html.js",
+        phoenix: __dirname + "/deps/phoenix/web/static/js/phoenix.js"
+      },
+
     root: [
       path.join(__dirname, '')
     ],
