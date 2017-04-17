@@ -1,1 +1,1 @@
-web: MIX_ENV=prod mix phoenix.server
+web: elixir --erl "-proto_dist Elixir.Epmdless -start_epmd false -epmd_module Elixir.Epmdless_epmd_client -setcookie $BEAM_COOKIE" --name $(echo $DYNO | sed -e 's/\.//')@127.0.0.1 -S mix phoenix.server --no-halt
